@@ -1,4 +1,6 @@
-import tensorflow as tf,sys
+import tensorflow as tf
+import sys
+
 retrain_data_path = sys.argv[1]
 
 #read in the data
@@ -22,4 +24,4 @@ with tf.Session() as sess:
   for node_id in top_k:
     human_string = label_lines[node_id]
     score = predictions[0][node_id]
-    print('%s (score=%s.5f)' & (human_string, score))
+    print('%s (score=%s.5f)' % (human_string, score))

@@ -3,23 +3,32 @@
 Artificial General Intelligence 1.0 Draft
 
 This white-paper is an outline of a concise method for producing artificial general intelligence that is safe and friendly. It is a collection of a lifetime of work from people in different fields. Special thanks to: John Smith(anonymous pen-name), Danko Nikolic, Stephen P King, Nikola Danaylov, members of Zero State, members of AI Kindergarten, members of trans/post-humanism network,  and the artificial intelligence community for making this all possible.
+
 Rationale:
 Deep learning has shown us that machines exceed human performance at many tasks. The problem is that they can’t be taught something new very easily. That’s why we need a more generalized form of machine learning.
 
 First Principles
 If you are new to the field of artificial intelligence, neuropsychology, psychology and/or cognitive neuroscience, you should know that this paper borrows heavily both the language and theoretical formulation from the following areas:
-Practopoeisis: A theory of intelligence. It provides a roadmap to creating artificial intelligence. More info here: http://www.danko-nikolic.com/ and a math proof of the theory here: http://www.fil.ion.ucl.ac.uk/~karl/Life%20as%20we%20know%20it.pdf and also you can see how this theory relates to artificial intelligence here: https://www.youtube.com/watch?v=1DeNSE9RH8A
-AI Kindergarten: It is a T4 system that creates a T3 intelligence, as described in the theory of practopoeisis. More info here: https://www.youtube.com/watch?v=aMQCi3Sn2mE
+
+1. Practopoeisis: A theory of intelligence. It provides a roadmap to creating artificial intelligence. More info here: http://www.danko-nikolic.com/ and a math proof of the theory here: http://www.fil.ion.ucl.ac.uk/~karl/Life%20as%20we%20know%20it.pdf and also you can see how this theory relates to artificial intelligence here: https://www.youtube.com/watch?v=1DeNSE9RH8A
+
+2. AI Kindergarten: It is a T4 system that creates a T3 intelligence, as described in the theory of practopoeisis. More info here: https://www.youtube.com/watch?v=aMQCi3Sn2mE
 Deep Learning: A simple way to give machines the ability to learn. More here: https://en.wikipedia.org/wiki/Deep_learning
 Relational Reasoning: A simple plug-and-play way to give AI the ability to reason. More info here: https://arxiv.org/abs/1706.01427
-Hierarchical Temporal Memory: A way to give machines the ability to learn in real-time, using reflexivity(aka cause and effect). You can learn more here: https://en.wikipedia.org/wiki/Hierarchical_temporal_memory
-Neuromorphic chips: It’s basically an AI accelerator… A chip that does AI with much less power and fewer computations than a traditional GPU or TPU. More can be found here: https://en.wikipedia.org/wiki/Neuromorphic_engineering
+
+3. Hierarchical Temporal Memory: A way to give machines the ability to learn in real-time, using reflexivity(aka cause and effect). You can learn more here: https://en.wikipedia.org/wiki/Hierarchical_temporal_memory
+
+4. Neuromorphic chips: It’s basically an AI accelerator… A chip that does AI with much less power and fewer computations than a traditional GPU or TPU. More can be found here: https://en.wikipedia.org/wiki/Neuromorphic_engineering
+
 Theory
 The theory of practopoeisis tells us that intelligence emerges from layers of adaptive systems. These are called traverses and are referenced as T1, T2, T3, etc. Each traverse produces a higher degree of adaptive/intelligent behaviour. The theory also tells us that human intelligence is a T3 system and that to create a T3 system you need a T4 system, which we call AI Kindergarten. The idea is that one can simply create a T4 system by putting a blank T3 machine in a room with a bunch of humans and they teach it until it becomes a T3 system. The extreme example of a T4 system is Earth with all its inhabitants forming a species, but for simplicity we are starting with kindergarten because it’s safer for both humans and machines. Now we will go through each traverse and see how these can be implemented in a machine.
+
 T1
 The lowest layer of an AGI system is raw data. This is very well understood and we can find or create data in many ways. For a simple AGI, we will use cameras, microphones, and speakers to simulate the audio and video that a human would have as a continuous stream of raw data. This is called T1. It has very slow adaptation because it is hardware based and so it rarely changes, similar to DNA. An ideal realization of of a slowly self-adapting hardware T1 would be a hardware device such as a camera connected to a battery of neuromorphic chips, similar to how a human eye is connected to the optic nerve.
+
 T2
 The next traverse of an AGI system is deep learning. This is very well understood and comes in various forms depending upon the task at hand. It also outperforms humans in many areas. For a simple AGI, we will use deep learning speech recognition with the microphone, speech generation with the speakers, image recognition with the cameras, etc. If you lump together many deep learning algorithms that deal with processing video, you have something similar to a human visual cortex. This is slightly more adaptive than an ideal hardware T1, but it is still relatively slow and it may take millions of iterations to find any improvement after initial training. This is good! This is what we want. An ideal realization of a T2 system would be a database of deep learning algorithms that can do anything a human can do and can be retrained as new data comes along; this is similar to human long-term memory. For this to happen, we need both a classifier(to tell us which algorithms to use) and a connectome(to tell us what to do with the output). This is where the T3 comes in.
+
 T3
 The next traverse of an AGI system is a Markov Blanket(MB) . A MB is just a bunch of nodes in a bayesian network and their parents, children, siblings, etc. The bayesian network in the MB consists of a directed acyclic graph(connectome) whose nodes(random inputs) are the outputs of the deep learning algorithms. The output of the connectome is a classification. For example, an image can be a dog, cat, or other. In the case that it is a cat, the deep learning cat recognition algorithm will output a high probability that it is a cat while the dog algorithm would output a low probability, giving a classification that this is a cat, not a dog, and probably not anything other. This can be generalized to create a new deep learning algorithm that classifies animals as animals first, and then classifies them into subclassifications such as cats, dogs, etc. This can then be run on a continuous input such as a camera and whenever an animal comes into view, the generalized classifier “knows” there is an animal and can then further process it to determine what type of animal. Anything which is unrecognized can then be acted on, in real time, to retrain the deep learning algorithms. This action can be human friendly, such as generating speech to say “what’s that?” and then present an image on a screen with the object highlighted and then wait for input from a human through the speech recognizer. In an ideal T3 system the machine could simply point to the object in the real world. 
 
